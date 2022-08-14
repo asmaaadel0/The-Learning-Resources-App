@@ -3,6 +3,7 @@
     <ul>
       <li>
         <button
+          :class="firstButton ? 'select-button' : 'not-select-button'"
           class="stored-button"
           @click="setSelectedComponent('stored-goals')"
         >
@@ -10,7 +11,10 @@
         </button>
       </li>
       <li>
-        <button class="add-button" @click="setSelectedComponent('add-goals')">
+        <button
+          :class="secondButton ? 'select-button' : 'not-select-button'"
+          @click="setSelectedComponent('add-goals')"
+        >
           Add Resources
         </button>
       </li>
@@ -22,10 +26,21 @@
 export default {
   data() {
     return {
-      inputInvalid: false,
+      firstButton: true,
+      secondButton: false,
     };
   },
-  methods: {},
+  methods: {
+    setSelectedComponent(buttonClicked) {
+      if (buttonClicked === "stored-goals") {
+        this.firstButton = true;
+        this.secondButton = false;
+      } else {
+        this.firstButton = false;
+        this.secondButton = true;
+      }
+    },
+  },
 };
 </script>
 <style scoped>
@@ -37,10 +52,8 @@ ul {
   margin: 0 auto 0 auto;
   display: grid;
   grid-template-columns: 0.1fr 0.1fr;
-}
-ul {
   background-color: rgb(255, 255, 255);
-  padding: 2rem;
+  padding: 2.9rem;
   padding-left: 3rem;
   margin-top: 3rem;
   text-align: center;
@@ -50,22 +63,22 @@ ul {
 }
 button {
   width: 10rem;
-  height: 3rem;
+  height: 3.3rem;
 }
-.stored-button {
+.select-button {
   color: aliceblue;
   border-color: rgb(74, 2, 141);
   border-radius: 0.5rem;
   background-color: rgb(74, 2, 141);
-  font-size: 1rem;
+  font-size: 110%;
   font-weight: 500;
 }
-.add-button {
+.not-select-button {
   color: rgb(74, 2, 141);
   border-color: aliceblue;
   border-radius: 0.5rem;
   background-color: aliceblue;
-  font-size: 1rem;
+  font-size: 110%;
   font-weight: 500;
 }
 button:hover {

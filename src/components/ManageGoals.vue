@@ -14,6 +14,7 @@
 <script>
 import ErrorAlert from "./ErrorAlert.vue";
 export default {
+  
   components: {
     ErrorAlert,
   },

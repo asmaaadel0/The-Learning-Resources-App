@@ -2,6 +2,8 @@
   <div>
     <the-header></the-header>
     <manage-page></manage-page>
+    <add-resourses></add-resourses>
+
 
     <!-- <active-goals v-if="selectedComponent=== 'active-goals'"></active-goals>
     <manage-goals v-if="selectedComponent=== 'manage-goals'"></manage-goals> -->
@@ -14,11 +16,13 @@
 <script>
 import TheHeader from "./components/layout/TheHeader.vue";
 import ManagePage from "./components/ManagePage.vue";
+import AddResourses from "./components/AddResourses.vue";
 
 export default {
   components: {
     TheHeader,
     ManagePage,
+    AddResourses,
   },
   data() {
     return {
