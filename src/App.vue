@@ -1,26 +1,49 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <the-header></the-header>
+    <manage-page></manage-page>
+
+    <!-- <active-goals v-if="selectedComponent=== 'active-goals'"></active-goals>
+    <manage-goals v-if="selectedComponent=== 'manage-goals'"></manage-goals> -->
+    <keep-alive>
+      <component :is="selectedComponent"></component>
+    </keep-alive>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheHeader from "./components/layout/TheHeader.vue";
+import ManagePage from "./components/ManagePage.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    TheHeader,
+    ManagePage,
+  },
+  data() {
+    return {
+      selectedComponent: "active-goals",
+      activeUser: {
+        name: "Maximilian Schwarzmüller",
+        description: "Site owner and admin",
+        role: "admin",
+      },
+    };
+  },
+  methods: {
+    setSelectedComponent(cmp) {
+      this.selectedComponent = cmp;
+    },
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
 }
 </style>
