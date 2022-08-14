@@ -1,24 +1,9 @@
 <template>
   <section>
-    <ul>
-      <li>
-        <button
-          :class="firstButton ? 'select-button' : 'not-select-button'"
-          class="stored-button"
-          @click="setSelectedComponent('stored-goals')"
-        >
-          Stored Resources
-        </button>
-      </li>
-      <li>
-        <button
-          :class="secondButton ? 'select-button' : 'not-select-button'"
-          @click="setSelectedComponent('add-goals')"
-        >
-          Add Resources
-        </button>
-      </li>
-    </ul>
+    <h2>Official Guide</h2>
+    <p>The official Vue.js documentation</p>
+    <a href="http://">View Resource</a>
+    <button @click="delete 'stored-goals'">Delete</button>
   </section>
 </template>
 
@@ -47,42 +32,45 @@ export default {
 };
 </script>
 <style scoped>
-ul {
-  list-style: none;
-  display: flex;
+section {
   padding: 0;
-  gap: 1rem;
   margin: 0 auto 0 auto;
-  display: grid;
-  grid-template-columns: 0.1fr 0.1fr;
   background-color: rgb(255, 255, 255);
   padding: 2.9rem;
-  padding-left: 3rem;
+  padding-top: 1rem;
   margin-top: 3rem;
-  text-align: center;
   width: 70%;
   border-radius: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
-button {
-  width: 10rem;
-  height: 3.3rem;
+h2 {
+  font-size: 140%;
+  font-weight: 700;
+  display: inline;
 }
-.select-button {
-  color: aliceblue;
-  border-color: rgb(74, 2, 141);
-  border-radius: 0.5rem;
-  background-color: rgb(74, 2, 141);
+p {
+  font-size: 130%;
+  font-weight: 500;
+}
+a {
+  color: rgb(255, 136, 0);
+  text-decoration: none;
   font-size: 110%;
   font-weight: 500;
 }
-.not-select-button {
+button {
   color: rgb(74, 2, 141);
   border-color: aliceblue;
   border-radius: 0.5rem;
   background-color: aliceblue;
   font-size: 110%;
   font-weight: 500;
+  left: 20rem;
+  /* margin-left: 55rem; */
+  width: 10rem;
+  height: 3.3rem;
+  display: inline;
+  float: right;
 }
 button:hover {
   background-color: rgba(137, 43, 226, 0.322);
@@ -90,19 +78,16 @@ button:hover {
   border-color: aliceblue;
 }
 @media (max-width: 450px) {
-  li {
-    margin-left: 3.5rem;
+    a{
+        display: block;
+    }
+  section {
+    height: 11rem;
+    text-align: center;
   }
-  ul {
-    grid-template-columns: 0;
-  }
-}
-@media (max-width: 300px) {
-  li {
-    margin-left: 1rem;
-  }
-  ul {
-    grid-template-columns: 0;
+  button {
+    margin-top:1rem;
+    float: none;
   }
 }
 </style>
