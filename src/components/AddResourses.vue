@@ -1,23 +1,72 @@
 <template>
   <section>
-    <form action="">
+    <form action="" @submit.prevent="submitData">
       <div>
         <label for="title">Title</label>
-        <input type="text" name="title" id="title" />
+        <input type="text" name="title" id="title" v-model="title" />
       </div>
       <div>
         <label for="desc">Description</label>
-        <input type="text" name="desc" id="desc" />
+        <textarea
+          type="text"
+          name="desc"
+          id="desc"
+          v-model="description"
+          rows="6"
+        />
       </div>
       <div>
         <label for="link">Link</label>
-        <input type="text" name="link" id="link" />
+        <input type="text" name="link" id="link" v-model="link" />
       </div>
       <button>Add Resourse</button>
     </form>
+    <teleport to="body">
+      <error-alert v-if="inputInvalid">
+          <div id="invalid">
+            <header>
+              <h2>Invalid Input</h2>
+            </header>
+            <p>Unfortunately, at least one input valye is invalid.</p>
+            <p>
+              please check all inputs and make sure you enter at least a few
+              characters into each input field.
+            </p>
+            <button @click="confirmError">okay</button>
+          </div>
+      </error-alert>
+    </teleport>
   </section>
 </template>
-<script></script>
+<script>
+import ErrorAlert from "./ErrorAlert.vue";
+export default {
+  components: {
+    ErrorAlert,
+  },
+  emits: ["add-resouce"],
+  data() {
+    return {
+      title: "",
+      description: "",
+      link: "",
+      inputInvalid: false,
+    };
+  },
+  methods: {
+    submitData() {
+      if (this.title === "" || this.description === "" || this.link === "") {
+        this.inputInvalid = true;
+        return;
+      }
+      this.$emit("add-resource", this.title, this.description, this.link);
+    },
+    confirmError() {
+      this.inputInvalid = false;
+    },
+  },
+};
+</script>
 <style scoped>
 section {
   padding: 0;
@@ -35,14 +84,14 @@ label {
   font-size: 130%;
 }
 input {
+  height: 2rem;
+}
+input,
+textarea {
   display: block;
   width: 95%;
-  height: 2rem;
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
-}
-#desc {
-  height: 4rem;
 }
 button {
   width: 10rem;
@@ -58,5 +107,25 @@ button:hover {
   background-color: rgba(137, 43, 226, 0.322);
   color: rgb(74, 2, 141);
   border-color: aliceblue;
+}
+input:focus,
+textarea:focus {
+  background-color: rgb(219, 190, 253);
+  color: rgb(32, 5, 63);
+  border-color: rgb(32, 5, 63);
+}
+#invalid button {
+  float: right;
+}
+#invalid header {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: right; */
+  background-color: rgb(74, 2, 141);
+}
+#invalid h2 {
+  margin: 0.8rem;
 }
 </style>

@@ -1,8 +1,11 @@
 <template>
   <section>
-    <h2>Official Guide</h2>
+    <!-- <h2>Official Guide</h2>
     <p>The official Vue.js documentation</p>
-    <a href="http://">View Resource</a>
+    <a href="http://google.com">View Resource</a> -->
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
+    <a :href=" link">View Resource</a>
     <button @click="delete 'stored-goals'">Delete</button>
   </section>
 </template>
@@ -10,7 +13,24 @@
 <script>
 export default {
   emits: ["choosenButton"],
-  props: {},
+  props: {
+    id: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    link: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       firstButton: true,
@@ -78,15 +98,15 @@ button:hover {
   border-color: aliceblue;
 }
 @media (max-width: 450px) {
-    a{
-        display: block;
-    }
+  a {
+    display: block;
+  }
   section {
     height: 11rem;
     text-align: center;
   }
   button {
-    margin-top:1rem;
+    margin-top: 1rem;
     float: none;
   }
 }
