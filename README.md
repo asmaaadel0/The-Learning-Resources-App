@@ -14,7 +14,7 @@ it's a simple website that allow us to share different learning resources that h
 - If you would like to share what you're working on, add the title, description, and link in the "Add Resource" section.
 - If you would like to see what other working on, got to "Stored Resource" section.
 
- ## ScreenShots from the game: <a name = "screen-shots"></a>
+ ## ScreenShots: <a name = "screen-shots"></a>
 <h3 align='left'>Main Screen</h3>
 
  ![image](https://user-images.githubusercontent.com/88618793/182143193-b4fb1d94-b311-45d4-85bc-a0961976620c.png)
