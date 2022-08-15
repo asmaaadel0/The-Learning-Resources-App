@@ -46,9 +46,16 @@ export default {
       secondButton: false,
       resources: [
         {
+          id:"Official Guide",
           title: "Official Guide",
           description: "The official Vue.js documentation",
-          link: "http://google.com",
+          link: "http://vuejs.org",
+        },
+        {
+          id:"Google",
+          title: "Google",
+          description: "Learn to google",
+          link: "http://google.org",
         },
       ],
     };
@@ -84,8 +91,14 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {

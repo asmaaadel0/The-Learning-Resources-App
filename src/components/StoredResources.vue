@@ -73,10 +73,13 @@ p {
   font-weight: 500;
 }
 a {
-  color: rgb(255, 136, 0);
+  color: rgb(255, 119, 0);
   text-decoration: none;
   font-size: 110%;
   font-weight: 500;
+}
+a:hover{
+  color: rgb(251, 154, 43);
 }
 button {
   color: rgb(74, 2, 141);
