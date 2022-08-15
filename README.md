@@ -1,28 +1,18 @@
 ## 📝 Table of Contents
 
 - [About](#about)
-- [Gaming System](#gaming-system)
-- [Website link](#link)
-- [ScreenShots from the game](#screen-shots)
+- [website description](#website-description)
+- [ScreenShots](#screen-shots)
 - [Contributors](#Contributors)
 
 ## About <a name = "about"></a>
-- Monster Slayer Game is a simple game using Vue.js, HTML and CSS.
+- Learning Resources App is a simple web application built using Vue js, HTML, CSS, and JavaScript.
 
-## Gaming System <a name = "gaming-system"></a>
+## website description <a name = "website-description"></a>
 
-There are two healthbars, one for your healt and the other for monster health' and the button 'Start game'. When you click this button, the game starts and another buttons replace this one:
-- Attack: both monster and player commit some attacks and the helathbars start to decline.
-- Special attack: it is something like ultimate for player, no actions are commited while ultimate is being used, so it's only player who makes some damage to monster.
-- heal: you can use this skill only three times during the match .
-- give up: you can finish the game and after clicking this button you return to the main menu where you can click the button 'Start game' again and try yourself one more time.
-
-In the end of page there is a Battle Log to see log messages
-
-## Website link <a name = "link"></a>
-
--  https://asmaaadel0.github.io/Monster-Slayer-Game/
-
+it's a simple website that allow us to share different learning resources that help us and the athors to know multible informations from different resources, it helps us to study.
+- If you would like to share what you're working on, add the title, description, and link in the "Add Resource" section.
+- If you would like to see what other working on, got to "Stored Resource" section.
 
  ## ScreenShots from the game: <a name = "screen-shots"></a>
 <h3 align='left'>Main Screen</h3>
