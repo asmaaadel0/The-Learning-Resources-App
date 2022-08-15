@@ -19,13 +19,27 @@ it's a simple website that allow us to share different learning resources that h
 
  ![image](https://user-images.githubusercontent.com/88618793/182143193-b4fb1d94-b311-45d4-85bc-a0961976620c.png)
 
- <h3 align='left'>When the player wins</h3>
+ <h3 align='left'>When you click "Add Resource" button</h3>
 
 ![image](https://user-images.githubusercontent.com/88618793/182144298-4540fb25-151a-49aa-aff4-a6e3d156d9c1.png)
 
-<h3 align='left'>Battle Log</h3>
+<h3 align='left'>then if you add title, description, and url</h3>
 
 ![image](https://user-images.githubusercontent.com/88618793/182144110-475b7291-268d-4e66-ab6d-fba1075e89f2.png)
+
+
+<h3 align='left'>it will appear in Resources</h3>
+
+![image](https://user-images.githubusercontent.com/88618793/182144110-475b7291-268d-4e66-ab6d-fba1075e89f2.png)
+
+<h3 align='left'>if you want to delete it, press 'delete' button</h3>
+
+![image](https://user-images.githubusercontent.com/88618793/182144110-475b7291-268d-4e66-ab6d-fba1075e89f2.png)
+
+<h3 align='left'>it will disappear</h3>
+
+![image](https://user-images.githubusercontent.com/88618793/182144110-475b7291-268d-4e66-ab6d-fba1075e89f2.png)
+
 ## Contributors <a name = "Contributors"></a>
 
 <table>
