@@ -17,28 +17,28 @@ it's a simple website that allow us to share different learning resources that h
  ## ScreenShots: <a name = "screen-shots"></a>
 <h3 align='left'>Main Screen</h3>
 
- ![image](https://user-images.githubusercontent.com/88618793/182143193-b4fb1d94-b311-45d4-85bc-a0961976620c.png)
+![Capture](https://user-images.githubusercontent.com/88618793/184661181-14be7b8b-44d8-4ef0-a082-1b3e6870d8e7.PNG)
 
  <h3 align='left'>When you click "Add Resource" button</h3>
 
-![image](https://user-images.githubusercontent.com/88618793/182144298-4540fb25-151a-49aa-aff4-a6e3d156d9c1.png)
+![Capture 2PNG](https://user-images.githubusercontent.com/88618793/184661176-fcd7e4f6-dff1-475c-9e50-2f9a8f4aaa14.PNG)
 
 <h3 align='left'>then if you add title, description, and url</h3>
 
-![image](https://user-images.githubusercontent.com/88618793/182144110-475b7291-268d-4e66-ab6d-fba1075e89f2.png)
+![Capture3](https://user-images.githubusercontent.com/88618793/184661219-6b9b38a1-bd79-43fc-afca-f656edf082d8.PNG)
 
 
-<h3 align='left'>it will appear in Resources</h3>
+<h3 align='left'>it will appear in Resources,>When you click "Stored Resource" button </h3>
 
-![image](https://user-images.githubusercontent.com/88618793/182144110-475b7291-268d-4e66-ab6d-fba1075e89f2.png)
+![Capture4](https://user-images.githubusercontent.com/88618793/184661244-3fee97f6-f7d2-4d76-8c4e-d683a65939bd.PNG)
 
 <h3 align='left'>if you want to delete it, press 'delete' button</h3>
 
-![image](https://user-images.githubusercontent.com/88618793/182144110-475b7291-268d-4e66-ab6d-fba1075e89f2.png)
+![Capture5](https://user-images.githubusercontent.com/88618793/184661359-d3a3cc29-e7c3-4bc8-a3c8-f61dbbb408ab.PNG)
 
 <h3 align='left'>it will disappear</h3>
 
-![image](https://user-images.githubusercontent.com/88618793/182144110-475b7291-268d-4e66-ab6d-fba1075e89f2.png)
+![Capture6](https://user-images.githubusercontent.com/88618793/184661383-50bd4dc3-a04c-4652-9c4e-f39a8ed569ed.PNG)
 
 ## Contributors <a name = "Contributors"></a>
 
