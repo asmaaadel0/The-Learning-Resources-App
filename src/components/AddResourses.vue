@@ -17,7 +17,7 @@
       </div>
       <div>
         <label for="link">Link</label>
-        <input type="text" name="link" id="link" v-model="link" />
+        <input type="url" name="link" id="link" v-model="link" />
       </div>
       <button>Add Resourse</button>
     </form>
@@ -55,7 +55,11 @@ export default {
   },
   methods: {
     submitData() {
-      if (this.title === "" || this.description === "" || this.link === "") {
+      if (
+        this.title.trim() === "" ||
+        this.description.trim() === "" ||
+        this.link.trim() === ""
+      ) {
         this.inputInvalid = true;
         return;
       }
@@ -116,12 +120,18 @@ textarea:focus {
 }
 #invalid button {
   float: right;
+  margin: 1rem;
+}
+#invalid p {
+  padding: 1rem;
 }
 #invalid header {
+  color: white;
   width: 100%;
+  padding: 1rem;
   height: 3rem;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   /* align-items: right; */
   background-color: rgb(74, 2, 141);
 }

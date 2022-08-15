@@ -1,6 +1,6 @@
 <template>
   <div>
-    <the-header></the-header>
+    <the-header title="RememberMe"></the-header>
     <manage-page @choosenButton="choosenButtonFunction"></manage-page>
     <keep-alive>
       <stored-resources
@@ -14,10 +14,12 @@
         @delete="deleteResource"
       ></stored-resources>
     </keep-alive>
-    <add-resourses
-      v-if="secondButton"
-      @add-resource="AddResource"
-    ></add-resourses>
+    <keep-alive>
+      <add-resourses
+        v-if="secondButton"
+        @add-resource="AddResource"
+      ></add-resourses>
+    </keep-alive>
 
     <!-- <active-goals v-if="selectedComponent=== 'active-goals'"></active-goals>
     <manage-goals v-if="selectedComponent=== 'manage-goals'"></manage-goals> -->
@@ -46,13 +48,13 @@ export default {
       secondButton: false,
       resources: [
         {
-          id:"Official Guide",
+          id: "Official Guide",
           title: "Official Guide",
           description: "The official Vue.js documentation",
           link: "http://vuejs.org",
         },
         {
-          id:"Google",
+          id: "Google",
           title: "Google",
           description: "Learn to google",
           link: "http://google.org",
@@ -77,7 +79,7 @@ export default {
         description: description,
         link: link,
       };
-      this.resources.push(newResurce);
+      this.resources.unshift(newResurce);
       this.firstButton = true;
       this.secondButton = false;
     },
@@ -91,7 +93,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -99,6 +101,13 @@ export default {
 
 html {
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+} */
+html {
+  font-family: sans-serif;
 }
 
 body {
