@@ -28,7 +28,7 @@ it's a simple website that allow us to share different learning resources that h
 ![Capture3](https://user-images.githubusercontent.com/88618793/184661219-6b9b38a1-bd79-43fc-afca-f656edf082d8.PNG)
 
 
-<h3 align='left'>it will appear in Resources,>When you click "Stored Resource" button </h3>
+<h3 align='left'>it will appear in Resources, When you click "Stored Resource" button </h3>
 
 ![Capture4](https://user-images.githubusercontent.com/88618793/184661244-3fee97f6-f7d2-4d76-8c4e-d683a65939bd.PNG)
 
