@@ -23,17 +23,17 @@
     </form>
     <teleport to="body">
       <error-alert v-if="inputInvalid">
-          <div id="invalid">
-            <header>
-              <h2>Invalid Input</h2>
-            </header>
-            <p>Unfortunately, at least one input valye is invalid.</p>
-            <p>
-              please check all inputs and make sure you enter at least a few
-              characters into each input field.
-            </p>
-            <button @click="confirmError">okay</button>
-          </div>
+        <div id="invalid">
+          <header>
+            <h2>Invalid Input</h2>
+          </header>
+          <p>Unfortunately, at least one input valye is invalid.</p>
+          <p>
+            please check all inputs and make sure you enter at least a few
+            characters into each input field.
+          </p>
+          <button @click="confirmError">okay</button>
+        </div>
       </error-alert>
     </teleport>
   </section>
@@ -127,5 +127,10 @@ textarea:focus {
 }
 #invalid h2 {
   margin: 0.8rem;
+}
+@media (max-width: 450px) {
+  #invalid header {
+    height: 5rem;
+  }
 }
 </style>

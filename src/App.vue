@@ -11,6 +11,7 @@
         :title="resource.title"
         :description="resource.description"
         :link="resource.link"
+        @delete="deleteResource"
       ></stored-resources>
     </keep-alive>
     <add-resourses

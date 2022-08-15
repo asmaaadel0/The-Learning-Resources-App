@@ -5,14 +5,14 @@
     <a href="http://google.com">View Resource</a> -->
     <h2>{{ title }}</h2>
     <p>{{ description }}</p>
-    <a :href=" link">View Resource</a>
-    <button @click="delete 'stored-goals'">Delete</button>
+    <a :href="link">View Resource</a>
+    <button @click="$emit('delete', id)">Delete</button>
   </section>
 </template>
 
 <script>
 export default {
-  emits: ["choosenButton"],
+  emits: ["choosenButton", "delete"],
   props: {
     id: {
       type: String,
