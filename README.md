@@ -13,7 +13,7 @@
 
 ## website description <a name = "website-description"></a>
 
-it's a simple website that allow us to share different learning resources that help us and the athors to know multible informations from different resources, it helps us to study.
+it's a simple website that allow us to share different learning resources that help us and the other to know multible informations from different resources, it helps us to study.
 - If you would like to share what you're working on, add the title, description, and link in the "Add Resource" section.
 - If you would like to see what other working on, got to "Stored Resource" section.
 
