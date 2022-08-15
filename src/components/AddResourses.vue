@@ -104,8 +104,8 @@ button {
   font-weight: 500;
 }
 button:hover {
-  background-color: rgba(137, 43, 226, 0.322);
-  color: rgb(74, 2, 141);
+  background-color: rgb(88, 2, 169);
+  /* color: rgb(74, 2, 141); */
   border-color: aliceblue;
 }
 input:focus,
