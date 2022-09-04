@@ -1,8 +1,5 @@
 <template>
   <section>
-    <!-- <h2>Official Guide</h2>
-    <p>The official Vue.js documentation</p>
-    <a href="http://google.com">View Resource</a> -->
     <h2>{{ title }}</h2>
     <p>{{ description }}</p>
     <a :href="link">View Resource</a>
